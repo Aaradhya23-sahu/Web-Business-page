@@ -1,4 +1,22 @@
-/* Basic Reset */
+/* Use the selector for your navigation bar (e.g., header, #navbar, .main-nav) */
+header {
+    /* 1. Fixes the element to the screen */
+    position: fixed;
+    /* 2. Sets the element to the top of the screen */
+    top: 0; 
+    /* 3. Ensures it stretches across the entire width */
+    width: 100%;
+    /* 4. Keeps it above other content when scrolling (high number) */
+    z-index: 1000; 
+    /* OPTIONAL: Adds a subtle shadow for a polished look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* IMPORTANT: Add padding to the body so content doesn't get hidden under the fixed header */
+body {
+    /* Adjust this value to match the height of your header/nav bar */
+    padding-top: 80px; 
+}/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -181,3 +199,4 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
