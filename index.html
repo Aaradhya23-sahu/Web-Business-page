@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Solutions Business Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Innovative Solutions</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#interactive">Interactive Tools</a></li>
+                <li><a href="#iq-game">IQ Game</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Driving Innovation, Delivering Results.</h1>
+            <p>Your partner in next-generation business technology.</p>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <h2>Image Gallery - Our Work</h2>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/300x200?text=Project+A" alt="Project A">
+                <img src="https://via.placeholder.com/300x200?text=Project+B" alt="Project B">
+                <img src="https://via.placeholder.com/300x200?text=Project+C" alt="Project C">
+                <img src="https://via.placeholder.com/300x200?text=Project+D" alt="Project D">
+            </div>
+        </section>
+
+        <section id="interactive" class="content-section">
+            <h2>Interactive Tools (HTML5 APIs)</h2>
+
+            <div class="tool-container">
+                <h3><i class="fas fa-microphone"></i> Microphone Test</h3>
+                <button id="mic-start-btn">Start Recording</button>
+                <p id="mic-status">Status: Ready</p>
+                <div id="mic-output"></div>
+                <small>Requires user permission. Functionality implemented in `script.js`.</small>
+            </div>
+
+            <div class="tool-container">
+                <h3><i class="fas fa-camera"></i> Camera Preview</h3>
+                <video id="camera-stream" autoplay></video>
+                <button id="camera-start-btn">Start Camera</button>
+                <small>Requires user permission. Functionality implemented in `script.js`.</small>
+            </div>
+        </section>
+        
+        <section id="iq-game" class="content-section">
+            <h2><i class="fas fa-brain"></i> The IQ Boost Game: Quick Math</h2>
+            <div class="game-area">
+                <p id="question">Click Start to begin!</p>
+                <input type="number" id="answer-input" placeholder="Your Answer">
+                <button id="game-start-btn">Start Game</button>
+                <button id="game-submit-btn" disabled>Submit</button>
+                <p id="game-feedback"></p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Innovative Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
